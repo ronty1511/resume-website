@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+}
+#particles-js {
+  position: fixed;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+}
+#fullpage {
+  position: relative;
+  background-color: transparent;
+  overflow: hidden;
+}
+a {
+  color: #0BA7DB;
+}
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  color: #0CBBF5;
+}
+h2, em {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  color: #0CBBF5;
+}
+#welcomeText {
+  min-height: 200px;
+}
+.recommended {
+  position: relative;
+  height: 120px;
+} 
+.rightCorner {
+  color: #0CBBF5;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+#page1, #page2, #page3, #page4, #page5 {
+  min-height: 100vh;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  text-align: center;
+}
+.mypic {
+  width: 15rem;
+  height: 15rem;
+}
+.academics, .skills, .achievements, .projects, .interests, .contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.skillsSubset, .achievementsSubset, .projectsSubset, .interestsSubset {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+.contactSubset ul {
+  display: flex;
+}
+ul {
+  list-style-type: none;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.academics li, .skills li, .achievements li, .projects li, .interests li, .contact li {
+  
+  font-size: 1.5rem;
+  color: #0CBBF5;
+  transition: background-color 0.5s, border-radius 0.5s;
+  padding: .5rem;
+}
+.academics li:hover, .skills li:hover, .projects li:hover, .achievements li:hover, .interests li:hover {
+  background-color: #032936;
+  border-radius: 20px;
+}
+.projectsSubset {
+  width: 75%;
+}
+ul .button {
+  padding: 1em;
+  transition: box-shadow 0.25s, transform 0.25s;
+}
+.button:hover {
+  box-shadow: 0 1em 1em 0.5em white;
+  transform: translateY(-0.5em);
+}
+@media (max-width: 800px) {
+  .skillsSubset, .achievementsSubset, .projectsSubset, .interestsSubset, .contactSubset {
+    flex-direction: column;
+  }
+}
+/*
+  Darkest -> Lightest
+  032936
+  065975
+  098AB5
+  0BA7DB
+  0CBBF5
+*/
